@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def data_analtysis(request):
-    return HttpResponse("This is data analysis app")
+    return HttpResponse("<p>This is data analysis app</p>")
