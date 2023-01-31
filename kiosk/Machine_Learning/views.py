@@ -9,4 +9,4 @@ def deep_learning(request):
     return HttpResponse("Welcome to deep learning app")
 
 def about_us(request):
-    return HttpResponse("Welcome to About us app")
+    return HttpResponse("Welcome to About us app inside machine learning app")
