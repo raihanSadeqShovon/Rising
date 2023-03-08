@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def about_u(Request):
-    return render(Request, 'about.html')
+    return render(Request, 'about/about.html')
