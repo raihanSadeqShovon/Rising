@@ -11,3 +11,10 @@ class TeachersRegistration(forms.Form):
     file = forms.CharField(widget=forms.FileInput)
     checkbox = forms.CharField(widget=forms.CheckboxInput)
     
+
+    def clean(self):
+        cleaned_data = super().clean
+        right_pass = self.cleaned_data['password']
+        wrong_pass = self.cleaned_data['repassword']
+        if right_pass != wrong_pass:
+            raise forms.ValidationError('Password doesnot match')
